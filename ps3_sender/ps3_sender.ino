@@ -86,10 +86,10 @@ void notify()
   if ( Ps3.event.button_up.start )
     buf[1] = buf[1] & 0xFD;
 
-  buf[2] = Ps3.data.analog.stick.rx+127;
-  buf[3] = Ps3.data.analog.stick.ry+127;
-  buf[4] = Ps3.data.analog.stick.lx+127;
-  buf[5] = Ps3.data.analog.stick.ly+127;
+  buf[2] = Ps3.data.analog.stick.rx+128;
+  buf[3] = Ps3.data.analog.stick.ry+128;
+  buf[4] = Ps3.data.analog.stick.lx+128;
+  buf[5] = Ps3.data.analog.stick.ly+128;
 }
 
 void onConnect() {
