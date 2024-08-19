@@ -42,10 +42,10 @@ void loop() {
     if (PS4.L2())buf[1] = buf[1] | 0x10;
     if (PS4.R2())buf[1] = buf[1] | 0x20;
 
-    buf[2] = PS4.RStickX() + 127;
-    buf[3] = PS4.RStickY() + 127;
-    buf[4] = PS4.LStickX() + 127;
-    buf[5] = PS4.LStickY() + 127;
+    buf[2] = PS4.RStickX() + 128;
+    buf[3] = PS4.RStickY() + 128;
+    buf[4] = PS4.LStickX() + 128;
+    buf[5] = PS4.LStickY() + 128;
   }
   CAN.beginPacket(0x100);
   for (int i = 0; i < 6; i++) {
